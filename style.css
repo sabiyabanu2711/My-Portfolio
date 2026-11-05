@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8f4;
+    color: #263b32;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #173c30;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+}
+
+.logo span {
+    color: #b5d7a8;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #b5d7a8;
+}
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background: #e6eee5;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.intro {
+    color: #547c62;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 10px 0;
+    color: #173c30;
+}
+
+.hero h2 {
+    font-size: 25px;
+    color: #66866d;
+}
+
+.hero-content > p:not(.intro) {
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #173c30;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #315b45;
+}
+
+.section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #173c30;
+}
+
+.section > p {
+    max-width: 750px;
+    margin: auto;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills span {
+    background: #e2ece2;
+    padding: 12px 22px;
+    border-radius: 6px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.project-card h3 {
+    color: #315b45;
+    margin-bottom: 12px;
+}
+
+#contact a {
+    color: #315b45;
+}
+
+footer {
+    text-align: center;
+    background: #173c30;
+    color: white;
+    padding: 20px;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 400px;
+        padding: 55px 7%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .section {
+        padding: 45px 7%;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+}
